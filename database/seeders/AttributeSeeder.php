@@ -37,6 +37,22 @@ class AttributeSeeder extends Seeder
                 'options' => json_encode(['morning', 'evening', 'night']),
                 'created_at' => now(),
                 'updated_at' => now(),
+            ],
+            [
+                'name' => 'job_location',
+                'label' => 'Job Location',
+                'type' => 'text',
+                'options' => null,
+                'created_at' => now(),
+                'updated_at' => now(),
+            ],
+            [
+                'name' => 'start_date',
+                'label' => 'Start Date',
+                'type' => 'date',
+                'options' => null,
+                'created_at' => now(),
+                'updated_at' => now(),
             ]
         ]);
     }

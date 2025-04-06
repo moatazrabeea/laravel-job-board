@@ -25,9 +25,30 @@ class JobListingSeeder extends Seeder
         ]);
           
         $job->attributes()->attach([
-            1 => ['value' => 5],           // years_experience
-            2 => ['value' => true],        // has_equity
-            3 => ['value' => 'evening'],   // work_shift
+            1 => ['value' => 5],           
+            2 => ['value' => true],        
+            3 => ['value' => 'evening'],
+            4 => ['value' => 'Cairo, Egypt'],
+            5 => ['value' => '2025-05-01'],  
+        ]);
+
+        $job2 = JobListing::create([
+            'title' => 'Backend Developer',
+            'description' => 'Laravel and API expert',
+            'company_name' => 'CodeCraft',
+            'salary_min' => 3000,
+            'salary_max' => 7000,
+            'is_remote' => false,
+            'job_type' => 'contract',
+            'status' => 'published',
+        ]);
+
+        $job2->attributes()->attach([
+            1 => ['value' => 3],
+            2 => ['value' => false],
+            3 => ['value' => 'morning'],
+            4 => ['value' => 'Alexandria, Egypt'],
+            5 => ['value' => '2025-06-15'],
         ]);
     }
 }
