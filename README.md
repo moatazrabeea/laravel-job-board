@@ -10,7 +10,7 @@ It supports dynamic, nested, and complex filtering over job listings, including 
 
 ## ⚙️ Tech Stack
 
-- Laravel 10+
+- Laravel 12+
 - MySQL
 - RESTful API Design
 
